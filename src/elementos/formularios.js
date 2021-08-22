@@ -6,7 +6,11 @@ const colores = {
     error: "#bb2929",
     exito: "#1ed12d"
 }
-
+const Title = styled.header`
+    font-size: 20px;
+    font-weight: 900;
+    margin: 40px;
+`;
 const Formulario = styled.form`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -61,7 +65,18 @@ const IconoValidacion = styled(FontAwesomeIcon)`
     font-size: 16px;
     opacity: 100%;
 `;
-
+const TitleNames = styled.p`
+    font-size: 14px;
+    grid-column: span 3;
+    margin: 10px;
+    text-align: left;
+`;
+const Asterisk = styled(FontAwesomeIcon)`
+    color: red;
+    font-size: 8px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+`;
 const ContenedorTerminos = styled.div`
     grid-column: span 3;
 
@@ -117,6 +132,14 @@ const MensajeError = styled.div`
     }
 `;
 
+const Description = styled.p`
+    text-align: left;
+    grid-column: span 3;
+    font-weight: 550;
+    font-size: 15px;
+`;
+
+
 export {
     Formulario,
     Label,
@@ -128,5 +151,9 @@ export {
     ContenedorBotonCentrado,
     Boton,
     MensajeExito,
-    MensajeError
+    MensajeError,
+    Asterisk,
+    TitleNames,
+    Title,
+    Description
 };

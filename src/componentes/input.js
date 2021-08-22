@@ -2,15 +2,31 @@ import React from "react";
 import {Label,GrupoInput,LeyendaError,IconoValidacion,Input} from './../elementos/formularios';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
-const ComponentInput = () =>{
+const ComponentInput = ({state,changeState,type,label,placeholder,name,leyendaError,expresionRegular}) =>{
+    /*
+    const onChange = (e) =>{
+        changeState({...state, campo: e.target.value});
+    }
+    */
+    //const validation = () =>{
+    /*    if(expresionRegular){
+            if(expresionRegular.test(state.campo)){
+                console.log("Input correcto");
+            }
+            else{
+                console.log("Input incorrecto");
+            }
+        }
+    }*/
+
     return(
         <div>
-            <Label htmlFor = "apellido1">Apellido 1</Label>
+            <Label htmlFor = {name}>{label}</Label>
                 <GrupoInput>
-                    <Input type = "text" placeholder="Apellido 1" id="apellido1"/>
+                    <Input type = {type} placeholder={placeholder} id={name} /*value={state.campo} onChange={onChange} onKeyUp={validation} onBlur={validation}*//>
                     <IconoValidacion icon={faTimesCircle}/>
                 </GrupoInput>
-            <LeyendaError>Error en validación</LeyendaError>
+            <LeyendaError>{leyendaError}</LeyendaError>
         </div>
     )
 }
