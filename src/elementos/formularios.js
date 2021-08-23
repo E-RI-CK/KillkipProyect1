@@ -171,9 +171,12 @@ const MensajeError = styled.div`
 
 const Description = styled.p`
     text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
     grid-column: span 3;
-    font-weight: 550;
+    font-weight: 300;
     font-size: 15px;
+    margin-top: 50px;
+    text-align: left;
 `;
 
 const Date = styled.input`

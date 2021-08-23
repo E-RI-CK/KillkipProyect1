@@ -1,13 +1,13 @@
 import React,{useState} from 'react';
 import './style.css';
 import { Formulario,Asterisk,TitleNames,ContenedorBotonCentrado,Boton,MensajeExito,MensajeError} from './elementos/formularios';
-import { faAsterisk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
+import { faExclamationTriangle,faAsterisk } from '@fortawesome/free-solid-svg-icons';
 import Input from './componentes/input';
 import Date from './componentes/date';
 import Title from './componentes/title';
 import DescriptionForm from './componentes/DescriptionForm';
+import Desempeño from './componentes/desempeño';
 
 const App = () => {
 
@@ -79,10 +79,9 @@ const App = () => {
               leyendError="Ingrese un valor valido solo caracteres A-Z-a-z"
               regularExpresion= {expression.name}
           />
-          <TitleNames>Fecha
-              <Asterisk icon={faAsterisk}/>
-          </TitleNames>
           <Date/>
+          <DescriptionForm/>
+          <Desempeño/>
 					{formulario === false && <MensajeError>
 					<p>
 						<FontAwesomeIcon icon={faExclamationTriangle}/>
@@ -94,7 +93,7 @@ const App = () => {
 					  {formulario === true && <MensajeExito>Formulario enviado exitosamente!</MensajeExito>}
 				  </ContenedorBotonCentrado>
         </Formulario>
-        <DescriptionForm/>
+        
     </main>
   )
 }                
