@@ -1,40 +1,42 @@
 import React from "react";
 import {Label,GrupoInput,LeyendaError,IconoValidacion,Input} from './../elementos/formularios';
-import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { faTimesCircle,faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 
-const ComponentInput = ({state,changeState,type,label,placeholder,name,leyendError,expresionRegular}) =>{
+const ComponentInput = ({state,changeState,type,label,placeholder,name,leyendError,regularExpresion}) => {
     
     const onChange = (e) =>{
-       // changeState({...state, campo: e.target.value});
+       changeState({...state, campo: e.target.value});// (agregar todos los campos del state,modificar campo con el valor actual)
        console.log(e.target.value);
     }
     
-   /* const validation = () =>{
-       if(expresionRegular){
-            if(expresionRegular.test(state.campo)){
-                console.log("Input correcto");
+    const validation = () =>{
+       if(regularExpresion){
+            if(regularExpresion.test(state.campo)){
+                //console.log("Input correcto");
+                changeState({...state, valid: 'true'});
             }
             else{
-                console.log("Input incorrecto");
+                changeState({...state, valid: 'false'});
             }
         }
-    }*/
+    }
 
     return(
         <div>
-            <Label htmlFor = {name}>{label}</Label>
+            <Label htmlFor = {name} validation={state.valid}>{label}</Label>
                 <GrupoInput>
                     <Input type = {type} 
                     placeholder={placeholder} 
                     id={name} 
-                    value={state.campo} 
+                    value={state.campo}
                     onChange={onChange} 
-                    //onKeyUp={validation} 
-                    //onBlur={validation}
+                    onKeyUp={validation} //presiona tecla y cuando levantas ejecuta funcion
+                    onBlur={validation}  //presiona tecla fuera del input
+                    validation={state.valid}
                     />
-                    <IconoValidacion icon={faTimesCircle}/>
+                    <IconoValidacion validation={state.valid} icon={state.valid === 'true' ? faCheckCircle : faTimesCircle}/>
                 </GrupoInput>
-            <LeyendaError>{leyendError}</LeyendaError>
+            <LeyendaError validation={state.valid}>{leyendError}</LeyendaError>
         </div>
     )
 }
