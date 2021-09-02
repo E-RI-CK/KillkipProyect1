@@ -29,7 +29,7 @@ const App = () => {
     if (apellido1.valid === 'true' &&
       apellido2.valid === 'true' &&
       nombres.valid === 'true') {
-      fetch('http://localhost:8080/api/form', {
+      fetch('https://killkip-backend.herokuapp.com/api/form', {
         method:"POST",
         body: JSON.stringify(
           {
