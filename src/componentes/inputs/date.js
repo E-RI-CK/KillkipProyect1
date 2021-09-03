@@ -1,5 +1,5 @@
 import React from 'react';
-import { Date,TitleNames,Asterisk,GrupoInput,LeyendaError,IconoValidacion} from '../elementos/formularios';
+import { Date,TitleNames,Asterisk,GrupoInput,LeyendaError,IconoValidacion} from '../../elementos/formularios';
 import { faAsterisk,faCheckCircle,faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 
 const ComponentDate = ({type,id,state,changeState,leyendError,name}) =>{

@@ -6,6 +6,7 @@ const colores = {
     error: "#bb2929",
     exito: "#1ed12d"
 }
+
 const Title = styled.header`
     font-size: 20px;
     font-weight: 900;
@@ -207,147 +208,6 @@ const Date = styled.input`
     `}
 `;
 
-const ContenedorText = styled.div`
-    z-index: 90;
-`;
-
-
-const DivBox1 = styled.p`
-
-    position: relative;
-    left: 240px;
-    width: 210.21px;
-    height: 85.59px;
-    background: rgba(196, 196, 196, 0.3);
-    border-radius: 8.85374px;
-
-    p{
-        width: 219.38px;
-        height: 48.2px;
-        padding: 20px;
-        padding-left: 12px;
-        padding-right: 20px;
-        font-family: Arial;
-        font-style: normal;
-        font-weight: bold;
-        text-align: right;
-        font-size: 17.1018px;
-        line-height: 24px;
-        text-align: center;
-        color: #454545;
-    }
-
-`;
-
-const DivBox2 = styled.p`
-    position: relative;
-    left: 460.9px;
-    bottom: 102.3px;
-    width: 210.21px;
-    height: 85.59px;
-    background: rgba(196, 196, 196, 0.3);
-    border-radius: 8.85374px;
-    
-    p{
-        width: 219.38px;
-        height: 48.2px;
-        padding: 20px;
-        padding-left: 12px;
-        padding-right: 20px;
-        font-family: Arial;
-        font-style: normal;
-        font-weight: bold;
-        text-align: right;
-        font-size: 17.1018px;
-        line-height: 24px;
-        text-align: center;
-        color: #454545;
-    }
-
-`;
-
-const DivBox3 = styled.p`
-    position: relative;
-    width: 210.21px;
-    height: 85.59px;
-    left: 681px;
-    bottom: 205.5px;
-    background: rgba(196, 196, 196, 0.3);
-    border-radius: 8.85374px;
-    
-    p{
-        width: 219.38px;
-        height: 48.2px;
-        padding: 30px;
-        padding-bottom: 25px;
-        padding-left: 12px;
-        padding-right: 20px;
-        font-family: Arial;
-        font-style: normal;
-        font-weight: bold;
-        text-align: right;
-        font-size: 17.1018px;
-        line-height: 24px;
-        text-align: center;
-        color: #454545;
-    }
-
-`;
-
-const DivBox4 = styled.div`
-
-    position: relative;
-    width: 320px;
-    height: 125px;
-    right: 330px;
-    top: 105px;
-    background: rgba(196, 196, 196, 0.3);
-    border-radius: 8.85374px;
-
-     Label{
-        padding: 20px 0px 0px 0px;
-        font-family: Arial;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 17.1018px;
-        line-height: 24px;
-        text-align: none;
-        color: #454545;
-    }
-`;
-const DivSelect = styled.div`
-
-    display: inline-block;
-
-    .select1{
-        position: absolute;
-        right: 615px;
-        padding: 0 20px 0 20px;
-        width: 230px;
-        height: 80px;
-        background: green;
-    }
-
-    .select2{
-        position: absolute;
-        left: 725px;
-        padding: 0 20px 0 20px;
-        width: 230px;
-        height: 80px;
-        background: black;
-    }
-
-    .select3{
-        position: absolute;
-        left: 945px;
-        padding: 0 20px 0 20px;
-        width: 230px;
-        height: 80px;
-        background: yellow;
-    }
-`;
-
-
 export {
     Formulario,
     Label,
@@ -364,11 +224,5 @@ export {
     TitleNames,
     Title,
     Description,
-    Date,
-    ContenedorText,
-    DivBox1,
-    DivBox2,
-    DivBox3,
-    DivBox4,
-    DivSelect
+    Date,  
 };

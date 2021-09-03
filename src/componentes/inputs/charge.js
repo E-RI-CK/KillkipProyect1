@@ -1,5 +1,5 @@
 import React from "react";
-import {GrupoInput,LeyendaError,IconoValidacion,Input,TitleNames,Asterisk} from './../elementos/formularios';
+import {GrupoInput,LeyendaError,IconoValidacion,Input,TitleNames,Asterisk} from '../../elementos/formularios';
 import { faTimesCircle,faCheckCircle,faAsterisk} from '@fortawesome/free-solid-svg-icons';
 
 const ComponentCharge = ({state,changeState,type,placeholder,name,leyendError,regularExpresion}) => {

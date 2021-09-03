@@ -1,5 +1,5 @@
 import React from "react";
-import { ContenedorText,DivBox1,DivBox2,DivBox3 } from "../../elementos/formularios";
+import { ContenedorText,DivBox1,DivBox2,DivBox3 } from "../../elementos/table";
 
 const ComponentTextBox = () => {
     return(

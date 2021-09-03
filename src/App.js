@@ -3,14 +3,18 @@ import './style.css';
 import { Formulario, Asterisk, TitleNames, ContenedorBotonCentrado, Boton, MensajeExito, MensajeError } from './elementos/formularios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationTriangle, faAsterisk } from '@fortawesome/free-solid-svg-icons';
-import Input from './componentes/input';
-import Date from './componentes/date';
+import Input from './componentes/inputs/input';
+import Date from './componentes/inputs/date';
 import Title from './componentes/title';
 import DescriptionForm from './componentes/DescriptionForm';
 import Desempeño from './componentes/desempeño';
-import Charge from './componentes/charge';
-import Textbox from './componentes/tabla1/textbox';
-import TextBoxOne from './componentes/tabla1/textboxone';
+import Charge from './componentes/inputs/charge';
+import Textbox from './componentes/tabla1/TextBox';
+import TextBoxOne from './componentes/tabla1/TextBoxOne';
+import TextBoxTwo from './componentes/tabla1/TextBoxTwo';
+import TextBoxThree from './componentes/tabla1/TextBoxThree';
+
+
 const App = () => {
 
   const [apellido1,changeLastName1] = useState({campo:'',valid: null});
@@ -256,6 +260,8 @@ const App = () => {
         <Desempeño/>
         <Textbox/>
         <TextBoxOne/>
+        <TextBoxTwo/>
+        <TextBoxThree/>
         {formulario === false && <MensajeError>
           <p>
             <FontAwesomeIcon icon={faExclamationTriangle} />

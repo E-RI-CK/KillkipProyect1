@@ -1,6 +1,6 @@
 import React from 'react';
-import { ContenedorText,DivBox4, Label,DivSelectOne } from '../../elementos/table';
 import Select from 'react-select';
+import { ContenedorText,DivBox5,Label,DivSelectTwo } from '../../elementos/table'; 
 
 const options = [
     {value: 1, label: "1"},
@@ -12,34 +12,34 @@ const options = [
 
 
 
-const TextBox1 = () =>{
+const TextBox2 = () =>{
     return(
         <ContenedorText>
-            <DivBox4>
+            <DivBox5>
                 <Label>
-                    <b>CUMPLIMIENTO - Grado de <br/> compromiso que asume para el <br/> cumplimiento de las metas. </b>
+                    <b>SENTIDO COMÚN - Grado de <br/> cumplimiento de las normas, <br/> procedimientos y políticas <br/> existentes. </b>
                 </Label>
-            </DivBox4>
-            <DivSelectOne>
+            </DivBox5>
+            <DivSelectTwo>
                 <Select
-                    className = "select1"
+                    className = "select4"
                     options = {options}    
                 />
-            </DivSelectOne>
-            <DivSelectOne>
+            </DivSelectTwo>
+            <DivSelectTwo>
                 <Select
-                    className = "select2"
+                    className = "select5"
                     options = {options}    
                 />
-            </DivSelectOne>
-            <DivSelectOne>
+            </DivSelectTwo>
+            <DivSelectTwo>
                 <Select
-                    className = "select3"
+                    className = "select6"
                     options = {options}    
                 />
-            </DivSelectOne>
+            </DivSelectTwo>
         </ContenedorText>
     )
 }
 
-export default TextBox1;
+export default TextBox2;
