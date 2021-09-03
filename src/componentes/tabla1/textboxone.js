@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContenedorText,DivBox4, Label,DivSelect } from '../elementos/formularios';
+import { ContenedorText,DivBox4, Label,DivSelect } from '../../elementos/formularios';
 import Select from 'react-select';
 
 const options = [

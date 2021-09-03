@@ -9,8 +9,8 @@ import Title from './componentes/title';
 import DescriptionForm from './componentes/DescriptionForm';
 import Desempeño from './componentes/desempeño';
 import Charge from './componentes/charge';
-import Textbox from './componentes/textbox';
-import TextBoxOne from './componentes/textboxone';
+import Textbox from './componentes/tabla1/textbox';
+import TextBoxOne from './componentes/tabla1/textboxone';
 const App = () => {
 
   const [apellido1,changeLastName1] = useState({campo:'',valid: null});
