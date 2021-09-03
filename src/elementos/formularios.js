@@ -190,6 +190,23 @@ const Date = styled.input`
     padding: 0 40px 0 10px;
     transition: .3s ease all;
     border: 3px solid transparent;
+
+    &:focus {
+        border: 3px solid ${colores.borde};
+        outline: none;
+        box-shadow: 3px 0px 30px rgba(163,163,163,0.4);
+    }
+
+    ${props => props.validation === 'true' && css`
+        border: 3px solid transparent;
+        background: rgb(232, 240, 254);
+    `}
+
+    ${props => props.validation === 'false' && css`
+        border: 3px solid ${colores.error} !important;
+    `}
+
+
 `;
 
 export {
