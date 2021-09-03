@@ -35,7 +35,15 @@ const TextBox1 = () =>{
             <DivSelectOne>
                 <Select
                     className = "select3"
-                    options = {options}    
+                    options = {options}  
+                    isDisabled = {false}  
+                />
+            </DivSelectOne>
+            <DivSelectOne>
+                <Select
+                    className = "select4"
+                    options = {options}  
+                    isDisabled = {false}  
                 />
             </DivSelectOne>
         </ContenedorText>

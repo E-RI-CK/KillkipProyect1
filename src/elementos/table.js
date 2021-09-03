@@ -177,31 +177,42 @@ const DivBox6 = styled.div`
 
 const DivSelectOne = styled.div`
 
-    //display: inline-block;
+    display: inline-block;
 
     .select1{
-        position: absolute;
-        right: 615px;
+        right: 110px;
         padding: 0 20px 0 20px;
         width: 230px;
         height: 80px;
         z-index: 3;
+        background: yellow;
     }
 
     .select2{
-        position: absolute;
-        left: 725px;
+        left: 113px;
+        bottom: 80px;
         padding: 0 20px 0 20px;
         width: 230px;
         height: 80px;
     }
 
+
     .select3{
-        position: absolute;
-        left: 945px;
+        bottom: 160px;
+        left: 330px;
         padding: 0 20px 0 20px;
         width: 230px;
         height: 80px;
+        background: brown;
+    }
+
+    .select4{
+        bottom: 160px;
+        left: 330px;
+        padding: 0 20px 0 20px;
+        width: 230px;
+        height: 80px;
+        background: darkblue;
     }
 `;
 
@@ -210,7 +221,6 @@ const DivSelectTwo = styled.div`
     display: inline-block;
 
     .select4{
-        position: absolute;
         top: 800px ;
         right: 615px;
         padding: 0 20px 0 20px;
@@ -220,7 +230,7 @@ const DivSelectTwo = styled.div`
     }
 
     .select5{
-        position: absolute;
+        
         left: 725px;
         top: 800px;
         padding: 0 20px 0 20px;
@@ -229,7 +239,7 @@ const DivSelectTwo = styled.div`
     }
 
     .select6{
-        position: absolute;
+        
         left: 945px;
         top: 800px;
         padding: 0 20px 0 20px;
@@ -243,7 +253,7 @@ const DivSelectThree = styled.div`
     display: inline-block;
 
     .select7{
-        position: absolute;
+       
         top: 935px ;
         right: 615px;
         padding: 0 20px 0 20px;
@@ -253,7 +263,7 @@ const DivSelectThree = styled.div`
     }
 
     .select8{
-        position: absolute;
+       
         left: 725px;
         top: 935px;
         padding: 0 20px 0 20px;
@@ -263,7 +273,7 @@ const DivSelectThree = styled.div`
     }
 
     .select9{
-        position: absolute;
+       
         left: 945px;
         top: 935px;
         padding: 0 20px 0 20px;
