@@ -315,6 +315,38 @@ const DivBox4 = styled.div`
         color: #454545;
     }
 `;
+const DivSelect = styled.div`
+
+    display: inline-block;
+
+    .select1{
+        position: absolute;
+        right: 615px;
+        padding: 0 20px 0 20px;
+        width: 230px;
+        height: 80px;
+        background: green;
+    }
+
+    .select2{
+        position: absolute;
+        left: 725px;
+        padding: 0 20px 0 20px;
+        width: 230px;
+        height: 80px;
+        background: black;
+    }
+
+    .select3{
+        position: absolute;
+        left: 945px;
+        padding: 0 20px 0 20px;
+        width: 230px;
+        height: 80px;
+        background: yellow;
+    }
+`;
+
 
 export {
     Formulario,
@@ -337,5 +369,6 @@ export {
     DivBox1,
     DivBox2,
     DivBox3,
-    DivBox4
+    DivBox4,
+    DivSelect
 };

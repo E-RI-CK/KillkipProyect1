@@ -185,6 +185,8 @@ const App = () => {
       changeLastName1({ campo: '', valid: 'null' });
       changeLastName2({ campo: '', valid: 'null' });
       changeNames({ campo: '', valid: 'null' });
+      changeCharge({campo:'',valid: 'null'});
+      changeDate({campo:'', valid: 'null'});
     }
     else {
       changeFomulario(false);
