@@ -14,6 +14,7 @@ const options = [
 
 const TextBox1 = () =>{
     return(
+        
         <ContenedorText>
             <DivBox4>
                 <Label>
