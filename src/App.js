@@ -15,14 +15,22 @@ import TextBoxTwo from './componentes/tabla1/TextBoxTwo';
 import TextBoxThree from './componentes/tabla1/TextBoxThree';
 import TextBoxFour from './componentes/tabla1/TextBoxFour';
 import TextBox1 from './componentes/tabla2/TextBox1';
+import TextBoxOneTable2 from './componentes/tabla2/TextBoxOneTable2';
 const App = () => {
 
-  const [apellido1,changeLastName1] = useState({campo:'',valid: null});
-  const [apellido2,changeLastName2] = useState({campo:'',valid: null});
-  const [nombres,changeNames] = useState({campo:'',valid: null});
-  const[cargo,changeCharge] = useState({campo:'',valid: null});
-  const[fecha,changeDate] = useState({campo: '',valid: null});
-  const [formulario,changeFomulario] = useState(null);
+  const [Fila1, setFila1] = useState({ box1: { input1: '1', input2: '1', input3: '1' } });
+  const [Fila2, setFila2] = useState({ box2: { input4: '1', input5: '1', input6: '1' } });
+  const [Fila3, setFila3] = useState({ box3: { input7: '1', input8: '1', input9: '1' } });
+  const [Fila4, setFila4] = useState({ box4: { input10: '1', input11: '1', input12: '1' } });
+  const Bloque1 = { Fila1, Fila2, Fila3, Fila4 };
+
+
+  const [apellido1, changeLastName1] = useState({ campo: '', valid: null });
+  const [apellido2, changeLastName2] = useState({ campo: '', valid: null });
+  const [nombres, changeNames] = useState({ campo: '', valid: null });
+  const [cargo, changeCharge] = useState({ campo: '', valid: null });
+  const [fecha, changeDate] = useState({ campo: '', valid: null });
+  const [formulario, changeFomulario] = useState(null);
 
   const expression = {
     name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
@@ -34,6 +42,7 @@ const App = () => {
   }
 
   const onSubmit = (e) => {
+    console.log(Bloque1)
     e.preventDefault();
 
     if (apellido1.valid === 'true' &&
@@ -49,24 +58,24 @@ const App = () => {
             fecha: "2002-12-31",
             desempeño: {
                 cumplimiento: {
-                    colaborador: 5,
-                  encargado: 5,
-                    director: 5
+                    colaborador: Number(Bloque1.Fila1.box1.input1),
+                  encargado: Number(Bloque1.Fila1.box1.input2),
+                    director: Number(Bloque1.Fila1.box1.input3)
                 },
                 sentido_comun: {
-                    colaborador: 5,
-                    encargado: 5,
-                    director: 5
+                    colaborador: Number(Bloque1.Fila2.box2.input4),
+                    encargado: Number(Bloque1.Fila2.box2.input5),
+                    director: Number(Bloque1.Fila2.box2.input6)
                 },
                 orientacion_de_resultados: {
-                    colaborador: 5,
-                    encargado: 5,
-                    director: 5
+                    colaborador: Number(Bloque1.Fila3.box3.input7),
+                    encargado: Number(Bloque1.Fila3.box3.input8),
+                    director: Number(Bloque1.Fila3.box3.input9)
                 },
                 responsabilidad: {
-                  colaborador: 5,
-                  encargado: 5,
-                  director: 5
+                  colaborador: Number(Bloque1.Fila4.box4.input10),
+                  encargado: Number(Bloque1.Fila4.box4.input11),
+                  director: Number(Bloque1.Fila4.box4.input12)
                 }
             },
             factor_humano: {
@@ -197,7 +206,7 @@ const App = () => {
 
     }
 
-    
+
 
   }
 
@@ -240,22 +249,22 @@ const App = () => {
           regularExpresion={expression.name}
         />
         <Charge
-                state={cargo}
-                changeState={changeCharge}
-                type="text"
-                placeholder="Cargo"
-                name="cargo"
-                leyendError="Ingrese un valor valido solo caracteres A-Z-a-z"
-                regularExpresion={expression.charge}
-            />
-        <Date 
-            state={fecha} 
-            changeState={changeDate} 
-            type='date' 
-            id='myDate' 
-            name='trip-start'
-            leyendError='Ingrese una fecha'
-          />
+          state={cargo}
+          changeState={changeCharge}
+          type="text"
+          placeholder="Cargo"
+          name="cargo"
+          leyendError="Ingrese un valor valido solo caracteres A-Z-a-z"
+          regularExpresion={expression.charge}
+        />
+        <Date
+          state={fecha}
+          changeState={changeDate}
+          type='date'
+          id='myDate'
+          name='trip-start'
+          leyendError='Ingrese una fecha'
+        />
         <DescriptionForm />
         <Desempeño/>
         <Textbox/>
@@ -264,6 +273,17 @@ const App = () => {
         <TextBoxThree/>
         <TextBoxFour/>
         <TextBox1/>
+        <TextBoxOneTable2/>
+        {formulario === false && <MensajeError>
+          <p>
+            <FontAwesomeIcon icon={faExclamationTriangle} />
+            <b>Error:</b> Por favor rellena el formulario correctamente.
+          </p>
+        </MensajeError>}
+        <ContenedorBotonCentrado>
+          <Boton type="submit">Enviar</Boton>
+          {formulario === true && <MensajeExito>Formulario enviado exitosamente!</MensajeExito>}
+        </ContenedorBotonCentrado>
       </Formulario>
 
     </main>

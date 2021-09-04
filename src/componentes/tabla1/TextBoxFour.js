@@ -1,7 +1,11 @@
 import React from "react";
 import { ContenedorText,DivBox7,Label,DivSelectFour } from '../../elementos/table'; 
 
-const TextBox4 = () =>{
+const TextBox4 = (props) =>{
+    function ingresarData(e){
+        props.setData({box4:{...props.data.box4,[e.target.name]:e.target.value}})
+        console.log(props.data)
+       }
     return(
         <ContenedorText>
             <DivBox7>
@@ -10,17 +14,17 @@ const TextBox4 = () =>{
                 </Label>
             </DivBox7>
             <DivSelectFour>
-                <input type="number" id="input10" name="tentacles" defaultValue = '1'
+                <input onChange={ingresarData}  onClick={ingresarData} onBlur={ingresarData} onKeyUp={ingresarData} type="number" id="input10" name="input10" defaultValue = '1'
                     min="1" max="5"
                 />
             </DivSelectFour>
             <DivSelectFour>
-                <input type="number" id="input11" name="tentacles" defaultValue = '1'
+                <input onChange={ingresarData}  onClick={ingresarData} onBlur={ingresarData} onKeyUp={ingresarData} type="number" id="input11" name="input11" defaultValue = '1'
                     min="1" max="5"
                 />
             </DivSelectFour>
             <DivSelectFour>
-                <input type="number" id="input12" name="tentacles" defaultValue = '1'
+                <input onChange={ingresarData}  onClick={ingresarData} onBlur={ingresarData} onKeyUp={ingresarData} type="number" id="input12" name="input12" defaultValue = '1'
                     min="1" max="5"
                 />
             </DivSelectFour>
