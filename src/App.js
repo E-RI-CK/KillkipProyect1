@@ -14,7 +14,7 @@ import TextBoxOne from './componentes/tabla1/TextBoxOne';
 import TextBoxTwo from './componentes/tabla1/TextBoxTwo';
 import TextBoxThree from './componentes/tabla1/TextBoxThree';
 import TextBoxFour from './componentes/tabla1/TextBoxFour';
-
+import TextBox1 from './componentes/tabla2/TextBox1';
 const App = () => {
 
   const [apellido1,changeLastName1] = useState({campo:'',valid: null});
@@ -263,19 +263,23 @@ const App = () => {
         <TextBoxTwo/>
         <TextBoxThree/>
         <TextBoxFour/>
-        {formulario === false && <MensajeError>
-          <p>
-            <FontAwesomeIcon icon={faExclamationTriangle} />
-            <b>Error:</b> Por favor rellena el formulario correctamente.
-          </p>
-        </MensajeError>}
-        <ContenedorBotonCentrado>
-          <Boton type="submit">Enviar</Boton>
-          {formulario === true && <MensajeExito>Formulario enviado exitosamente!</MensajeExito>}
-        </ContenedorBotonCentrado>
+        <TextBox1/>
       </Formulario>
 
     </main>
   )
 }
 export default App;
+
+/*
+{formulario === false && <MensajeError>
+  <p>
+    <FontAwesomeIcon icon={faExclamationTriangle} />
+    <b>Error:</b> Por favor rellena el formulario correctamente.
+  </p>
+</MensajeError>}
+<ContenedorBotonCentrado>
+  <Boton type="submit">Enviar</Boton>
+  {formulario === true && <MensajeExito>Formulario enviado exitosamente!</MensajeExito>}
+</ContenedorBotonCentrado>
+*/

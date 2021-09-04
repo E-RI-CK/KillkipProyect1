@@ -21,8 +21,6 @@ const Label = styled.label`
 
 const ContenedorText = styled.div`
     
-
-
 `;
 
 const DivBox1 = styled.p`
@@ -197,6 +195,7 @@ const DivBox7 = styled.div`
         color: #454545;
     }
 `;
+
 
 const DivSelectOne = styled.div`
 
