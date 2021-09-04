@@ -20,7 +20,9 @@ const Label = styled.label`
 
 
 const ContenedorText = styled.div`
-    z-index: 90;
+    
+
+
 `;
 
 const DivBox1 = styled.p`
@@ -31,7 +33,7 @@ const DivBox1 = styled.p`
     height: 85.59px;
     background: rgba(196, 196, 196, 0.3);
     border-radius: 8.85374px;
-
+  
     p{
         width: 219.38px;
         height: 48.2px;
@@ -58,7 +60,7 @@ const DivBox2 = styled.p`
     height: 85.59px;
     background: rgba(196, 196, 196, 0.3);
     border-radius: 8.85374px;
-    
+ 
     p{
         width: 219.38px;
         height: 48.2px;
@@ -85,7 +87,7 @@ const DivBox3 = styled.p`
     bottom: 205.5px;
     background: rgba(196, 196, 196, 0.3);
     border-radius: 8.85374px;
-    
+ 
     p{
         width: 219.38px;
         height: 48.2px;
@@ -162,7 +164,7 @@ const DivBox6 = styled.div`
     border-radius: 8.85374px;
 
     Label{
-        padding: 20px 0px 0px 0px;
+        padding: 6px 0px 0px 0px;
         font-family: Arial;
         font-style: normal;
         font-weight: bold;
@@ -177,42 +179,36 @@ const DivBox6 = styled.div`
 
 const DivSelectOne = styled.div`
 
-    display: inline-block;
+    display: inline-flexbox;
 
-    .select1{
-        right: 110px;
+    #input1{
+        position: relative;
+        right: 75px;
         padding: 0 20px 0 20px;
-        width: 230px;
+        width: 150px;
         height: 80px;
         z-index: 3;
-        background: yellow;
+        background: rgba(196, 196, 196, 0.3);
     }
 
-    .select2{
-        left: 113px;
+    #input2{
+        position: relative;
+        right: 7px;    
+        padding: 0 20px 0 20px;
+        width: 150px;
+        height: 80px;
+        background: rgba(196, 196, 196, 0.3);
+    }
+
+
+    #input3{
+        position: relative;
+        left: 290px;
         bottom: 80px;
         padding: 0 20px 0 20px;
-        width: 230px;
+        width: 150px;
         height: 80px;
-    }
-
-
-    .select3{
-        bottom: 160px;
-        left: 330px;
-        padding: 0 20px 0 20px;
-        width: 230px;
-        height: 80px;
-        background: brown;
-    }
-
-    .select4{
-        bottom: 160px;
-        left: 330px;
-        padding: 0 20px 0 20px;
-        width: 230px;
-        height: 80px;
-        background: darkblue;
+        background: rgba(196, 196, 196, 0.3);
     }
 `;
 
@@ -220,31 +216,35 @@ const DivSelectTwo = styled.div`
 
     display: inline-block;
 
-    .select4{
-        top: 800px ;
-        right: 615px;
+    #input4{
+        position: relative;
+        top: 130px;
+        right: 415px;
         padding: 0 20px 0 20px;
-        width: 230px;
+        width: 150px;
         height: 80px;
         z-index: 2;
+        background: rgba(196, 196, 196, 0.3);
     }
 
-    .select5{
-        
-        left: 725px;
-        top: 800px;
+    #input5{
+        position: relative;
+        top: 130px;
+        right: 348px;
         padding: 0 20px 0 20px;
-        width: 230px;
+        width: 150px;
         height: 80px;
+        background: rgba(196, 196, 196, 0.3);
     }
 
-    .select6{
-        
-        left: 945px;
-        top: 800px;
+    #input6{
+        position: relative;
+        right: 50px;
+        top: 48px;
         padding: 0 20px 0 20px;
-        width: 230px;
+        width: 150px;
         height: 80px;
+        background: rgba(196, 196, 196, 0.3);
     }
 `;
 
@@ -252,33 +252,36 @@ const DivSelectThree = styled.div`
 
     display: inline-block;
 
-    .select7{
-       
-        top: 935px ;
-        right: 615px;
+    #input7{
+        position: relative;
+        bottom: 72px ;
+        left: 265px;
         padding: 0 20px 0 20px;
-        width: 230px;
+        width: 150px;
         height: 80px;
         z-index: 1;
+        background: rgba(196, 196, 196, 0.3);
     }
 
-    .select8{
-       
-        left: 725px;
-        top: 935px;
+    #input8{
+        position: relative;
+        bottom: 72px;
+        left: 330px;
         padding: 0 20px 0 20px;
-        width: 230px;
+        width: 150px;
         height: 80px;
         z-index: 90;
+        background: rgba(196, 196, 196, 0.3);
     }
 
-    .select9{
-       
-        left: 945px;
-        top: 935px;
+    #input9{
+        position: relative;
+        bottom: 152px;
+        left: 630px;
         padding: 0 20px 0 20px;
-        width: 230px;
+        width: 150px;
         height: 80px;
+        background: rgba(196, 196, 196, 0.3);
     }
 `;
 

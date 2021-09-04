@@ -1,14 +1,6 @@
 import React from 'react';
-import Select from 'react-select';
-import { ContenedorText,DivBox5,Label,DivSelectTwo } from '../../elementos/table'; 
 
-const options = [
-    {value: 1, label: "1"},
-    {value: 2, label: "2"},
-    {value: 3, label: "3"},
-    {value: 4, label: "4"},
-    {value: 5, label: "5"}
-];
+import { ContenedorText,DivBox5,Label,DivSelectTwo } from '../../elementos/table'; 
 
 
 
@@ -21,21 +13,18 @@ const TextBox2 = () =>{
                 </Label>
             </DivBox5>
             <DivSelectTwo>
-                <Select
-                    className = "select4"
-                    options = {options}    
+                <input type="number" id="input4" name="tentacles" defaultValue = '1'
+                    min="1" max="5"
                 />
             </DivSelectTwo>
             <DivSelectTwo>
-                <Select
-                    className = "select5"
-                    options = {options}    
+                <input type="number" id="input5" name="tentacles" defaultValue = '1'
+                    min="1" max="5"
                 />
             </DivSelectTwo>
             <DivSelectTwo>
-                <Select
-                    className = "select6"
-                    options = {options}    
+                <input type="number" id="input6" name="tentacles" defaultValue = '1'
+                    min="1" max="5"
                 />
             </DivSelectTwo>
         </ContenedorText>

@@ -1,20 +1,10 @@
 import React from 'react';
 import { ContenedorText,DivBox4, Label,DivSelectOne } from '../../elementos/table';
-import Select from 'react-select';
-
-const options = [
-    {value: 1, label: "1"},
-    {value: 2, label: "2"},
-    {value: 3, label: "3"},
-    {value: 4, label: "4"},
-    {value: 5, label: "5"}
-];
-
 
 
 const TextBox1 = () =>{
     return(
-        
+
         <ContenedorText>
             <DivBox4>
                 <Label>
@@ -22,33 +12,24 @@ const TextBox1 = () =>{
                 </Label>
             </DivBox4>
             <DivSelectOne>
-                <Select
-                    className = "select1"
-                    options = {options}    
+                <input type="number" id="input1" name="tentacles" defaultValue = '1'
+                min="1" max="5"
                 />
             </DivSelectOne>
             <DivSelectOne>
-                <Select
-                    className = "select2"
-                    options = {options}    
+                <input type="number" id="input2" name="tentacles" defaultValue = '1'
+                min="1" max="5"
                 />
             </DivSelectOne>
             <DivSelectOne>
-                <Select
-                    className = "select3"
-                    options = {options}  
-                    isDisabled = {false}  
-                />
-            </DivSelectOne>
-            <DivSelectOne>
-                <Select
-                    className = "select4"
-                    options = {options}  
-                    isDisabled = {false}  
+                <input type="number" id="input3" name="tentacles" defaultValue = '1'
+                    min="1" max="5"
                 />
             </DivSelectOne>
         </ContenedorText>
     )
 }
+
+
 
 export default TextBox1;
