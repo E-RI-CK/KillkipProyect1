@@ -44,166 +44,166 @@ const App = () => {
     console.log(Bloque1)
     e.preventDefault();
 
-    // if (apellido1.valid === 'true' &&
-    //   apellido2.valid === 'true' &&
-    //   nombres.valid === 'true') {
-    //   fetch('https://killkip-backend.herokuapp.com/api/form', {
-    //     method:"POST",
-    //     body: JSON.stringify(
-    //       {
-    //         apellidoP: apellido1.campo,
-    //         apellidoM: apellido2.campo,
-    //         nombres: nombres.campo,
-    //         fecha: "2002-12-31",
-    //         desempeño: {
-    //             cumplimiento: {
-    //                 colaborador: 5,
-    //               encargado: 5,
-    //                 director: 5
-    //             },
-    //             sentido_comun: {
-    //                 colaborador: 5,
-    //                 encargado: 5,
-    //                 director: 5
-    //             },
-    //             orientacion_de_resultados: {
-    //                 colaborador: 5,
-    //                 encargado: 5,
-    //                 director: 5
-    //             },
-    //             responsabilidad: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             }
-    //         },
-    //         factor_humano: {
-    //             actitud_organizacion: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             },
-    //             actitud_equipo: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             },
-    //             actitud_colaboradores: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             },
-    //             predisposicion: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             },
-    //             puntualidad: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             }
-    //         },
-    //         habilidades: {
-    //             respuesta: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             },
-    //             organizacion: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             },
-    //             potencial: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             },
-    //             iniciativa: {
-    //               colaborador: 5,
-    //                 encargado: 5,
-    //                 director: 5
-    //             }
-    //         },
-    //         calidad: {
-    //             exactitud: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             },
-    //             grado_de_conocimiento: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             },
-    //             precision: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             },
-    //             relaciones_interpersonales: {
-    //               colaborador: 5,
-    //                 encargado: 5,
-    //                 director: 5
-    //             },
-    //             presentacion_personal: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             }
-    //         },
-    //         liderazgo: {
-    //             coordinacion: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             },
-    //             cooperacion: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             },
-    //             capacidad: {
-    //               colaborador: 5,
-    //                 encargado: 5,
-    //                 director: 5
-    //             },
-    //             trabajo: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             },
-    //             creatividad: {
-    //               colaborador: 5,
-    //               encargado: 5,
-    //               director: 5
-    //             }
-    //         },
-    //         promedios: {
-    //             eval_colaborador: 5,
-    //             eval_jefe: 5,
-    //             eval_gerente: 5,
-    //             promedio_general: 5
-    //         },
-    //         observaciones: "sin observaciones",
-    //         firma: "firma123"
-    //     }),
-    //     headers: {
-    //       "Content-type": "application/json",
-    //     }
-    //   });
-    //   changeFomulario(true);
-    //   changeLastName1({ campo: '', valid: 'null' });
-    //   changeLastName2({ campo: '', valid: 'null' });
-    //   changeNames({ campo: '', valid: 'null' });
-    //   changeCharge({campo:'',valid: 'null'});
-    //   changeDate({campo:'', valid: 'null'});
-    // }
-    // else {
-    //   changeFomulario(false);
+    if (apellido1.valid === 'true' &&
+      apellido2.valid === 'true' &&
+      nombres.valid === 'true') {
+      fetch('https://killkip-backend.herokuapp.com/api/form', {
+        method:"POST",
+        body: JSON.stringify(
+          {
+            apellidoP: apellido1.campo,
+            apellidoM: apellido2.campo,
+            nombres: nombres.campo,
+            fecha: "2002-12-31",
+            desempeño: {
+                cumplimiento: {
+                    colaborador: Number(Bloque1.Fila1.box1.input1),
+                  encargado: Number(Bloque1.Fila1.box1.input2),
+                    director: Number(Bloque1.Fila1.box1.input3)
+                },
+                sentido_comun: {
+                    colaborador: Number(Bloque1.Fila2.box2.input4),
+                    encargado: Number(Bloque1.Fila2.box2.input5),
+                    director: Number(Bloque1.Fila2.box2.input6)
+                },
+                orientacion_de_resultados: {
+                    colaborador: Number(Bloque1.Fila3.box3.input7),
+                    encargado: Number(Bloque1.Fila3.box3.input8),
+                    director: Number(Bloque1.Fila3.box3.input9)
+                },
+                responsabilidad: {
+                  colaborador: Number(Bloque1.Fila4.box4.input10),
+                  encargado: Number(Bloque1.Fila4.box4.input11),
+                  director: Number(Bloque1.Fila4.box4.input12)
+                }
+            },
+            factor_humano: {
+                actitud_organizacion: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                },
+                actitud_equipo: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                },
+                actitud_colaboradores: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                },
+                predisposicion: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                },
+                puntualidad: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                }
+            },
+            habilidades: {
+                respuesta: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                },
+                organizacion: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                },
+                potencial: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                },
+                iniciativa: {
+                  colaborador: 5,
+                    encargado: 5,
+                    director: 5
+                }
+            },
+            calidad: {
+                exactitud: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                },
+                grado_de_conocimiento: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                },
+                precision: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                },
+                relaciones_interpersonales: {
+                  colaborador: 5,
+                    encargado: 5,
+                    director: 5
+                },
+                presentacion_personal: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                }
+            },
+            liderazgo: {
+                coordinacion: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                },
+                cooperacion: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                },
+                capacidad: {
+                  colaborador: 5,
+                    encargado: 5,
+                    director: 5
+                },
+                trabajo: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                },
+                creatividad: {
+                  colaborador: 5,
+                  encargado: 5,
+                  director: 5
+                }
+            },
+            promedios: {
+                eval_colaborador: 5,
+                eval_jefe: 5,
+                eval_gerente: 5,
+                promedio_general: 5
+            },
+            observaciones: "sin observaciones",
+            firma: "firma123"
+        }),
+        headers: {
+          "Content-type": "application/json",
+        }
+      });
+      changeFomulario(true);
+      changeLastName1({ campo: '', valid: 'null' });
+      changeLastName2({ campo: '', valid: 'null' });
+      changeNames({ campo: '', valid: 'null' });
+      changeCharge({campo:'',valid: 'null'});
+      changeDate({campo:'', valid: 'null'});
+    }
+    else {
+      changeFomulario(false);
 
-    // }
+    }
 
 
 
