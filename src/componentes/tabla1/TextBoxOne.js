@@ -1,8 +1,6 @@
 import React from 'react';
 import { ContenedorText,DivBox4, Label,DivSelectOne } from '../../elementos/table';
 
-
-
 const TextBox1 = () =>{
     return(
 

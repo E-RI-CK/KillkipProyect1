@@ -13,7 +13,7 @@ import Textbox from './componentes/tabla1/TextBox';
 import TextBoxOne from './componentes/tabla1/TextBoxOne';
 import TextBoxTwo from './componentes/tabla1/TextBoxTwo';
 import TextBoxThree from './componentes/tabla1/TextBoxThree';
-
+import TextBoxFour from './componentes/tabla1/TextBoxFour';
 
 const App = () => {
 
@@ -262,6 +262,7 @@ const App = () => {
         <TextBoxOne/>
         <TextBoxTwo/>
         <TextBoxThree/>
+        <TextBoxFour/>
         {formulario === false && <MensajeError>
           <p>
             <FontAwesomeIcon icon={faExclamationTriangle} />
