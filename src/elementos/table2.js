@@ -153,7 +153,7 @@ const DivBox12 = styled.p`
     border-radius: 8.85374px;
 
     Label{
-        padding: 20px 0px 0px 0px;
+        padding: 45px 0px 0px 0px;
         font-family: Arial;
         font-style: normal;
         font-weight: bold;
@@ -168,8 +168,8 @@ const DivBox12 = styled.p`
 const DivBox13 = styled.p`
 
     position: relative;
-    top: 711px;
-    right: 773px;
+    top: 640px;
+    right: 94px;
     width: 320px;
     height: 228px;
     background: rgba(196, 196, 196, 0.3);
@@ -185,31 +185,54 @@ const DivBox13 = styled.p`
         text-align: none;
         color: #454545;
     }
-
 `;
 
 const DivBox14 = styled.p`
 
     position: relative;
-    top: 512px;
-    right: 94px;
+    top: 891px;
+    right: 436px;
     width: 320px;
     height: 228px;
     background: rgba(196, 196, 196, 0.3);
     border-radius: 8.85374px;
 
     Label{
-        padding: 70px 0px 0px 0px;
+        padding: 50px 0px 0px 0px;
         font-family: Arial;
         font-style: normal;
         font-weight: bold;
         font-size: 17.1018px;
         line-height: 24px;
-        text-align: left;
+        text-align: center;
         color: #454545;
     }
 
 `;
+
+const DivBox15 = styled.p`
+
+    position: relative;
+    top: 1140px;
+    right: 766px;
+    width: 320px;
+    height: 228px;
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 8.85374px;
+
+    Label{
+        padding: 40px 0px 0px 0px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17.1018px;
+        line-height: 24px;
+        text-align: center;
+        color: #454545;
+    }
+
+`;
+
 
 const DivSelectOneTable3 = styled.div`
 
@@ -292,8 +315,8 @@ const DivSelectThreeTable3 = styled.div`
 
     #input31{
         position: relative;
-        top: 550px;
-        right: 416px;
+        top: 460px;
+        left: 267px;
         padding: 0 20px 0 20px;
         width: 150px;
         height: 80px;
@@ -303,8 +326,8 @@ const DivSelectThreeTable3 = styled.div`
 
     #input32{
         position: relative;
-        top: 550px;
-        right: 353px;
+        top: 460px;
+        left: 335px;
         padding: 0 20px 0 20px;
         width: 150px;
         height: 80px;
@@ -314,8 +337,8 @@ const DivSelectThreeTable3 = styled.div`
 
     #input33{
         position: relative;
-        top: 470px;
-        right: 50px;
+        top: 380px;
+        left: 633px;
         padding: 0 20px 0 20px;
         width: 150px;
         height: 80px;
@@ -329,8 +352,8 @@ display: inline-block;
 
     #input34{
         position: relative;
-        top: 350px;
-        left: 264px;
+        top: 731px;
+        right: 73px;
         padding: 0 20px 0 20px;
         width: 150px;
         height: 80px;
@@ -340,8 +363,8 @@ display: inline-block;
 
     #input35{
         position: relative;
-        top: 350px;
-        left: 328px;
+        top: 730px;
+        right:  1px;
         padding: 0 20px 0 20px;
         width: 150px;
         height: 80px;
@@ -351,8 +374,8 @@ display: inline-block;
 
     #input36{
         position: relative;
-        top: 270px;
-        left: 630px;
+        top: 649px;
+        left: 292px;
         padding: 0 20px 0 20px;
         width: 150px;
         height: 80px;
@@ -360,6 +383,42 @@ display: inline-block;
     }
 `;
 
+const DivSelectFiveTable3 = styled.div`
+
+display: inline-block;
+
+    #input37{
+        position: relative;
+        top: 971px;
+        right: 413px;
+        padding: 0 20px 0 20px;
+        width: 150px;
+        height: 80px;
+        z-index: 1;
+        background: rgba(196, 196, 196, 0.3);
+    }
+
+    #input38{
+        position: relative;
+        top: 971px;
+        right:  339px;
+        padding: 0 20px 0 20px;
+        width: 150px;
+        height: 80px;
+        z-index: 90;
+        background: rgba(196, 196, 196, 0.3);
+    }
+
+    #input39{
+        position: relative;
+        top: 890px;
+        right: 30px;
+        padding: 0 20px 0 20px;
+        width: 150px;
+        height: 80px;
+        background: rgba(196, 196, 196, 0.3);
+    }
+`;
 
 export{
     Label,
@@ -373,8 +432,10 @@ export{
     DivBox12,
     DivBox13,
     DivBox14,
+    DivBox15,
     DivSelectOneTable3,
     DivSelectTwoTable3,
     DivSelectThreeTable3,
-    DivSelectFourTable3
+    DivSelectFourTable3,
+    DivSelectFiveTable3
 }

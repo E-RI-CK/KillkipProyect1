@@ -25,6 +25,11 @@ import Liderazgo from "./componentes/table3/TitleTable3";
 import TextBox2 from "./componentes/table3/TextBox2";
 import TextBoxOneTable3 from './componentes/table3/TextBoxOneTable3';
 import TextBoxTwoTable3 from './componentes/table3/TextBoxTwoTable3';
+import TextBoxThreeTable3 from './componentes/table3/TextBoxThreeTable3';
+import TextBoxFourTable3 from './componentes/table3/TextBoxFourTable3';
+import TextBoxFiveTable3 from './componentes/table3/TextBoxFiveTable3';  
+
+
 const App = () => {
 
   const [Fila1, setFila1] = useState({ box1: { input1: '1', input2: '1', input3: '1' } });
@@ -291,10 +296,21 @@ const App = () => {
         <TextBox2/>
         <TextBoxOneTable3/>
         <TextBoxTwoTable3/>
-        
-        
-      </Formulario>
-
+        <TextBoxThreeTable3/>
+        <TextBoxFourTable3/>
+        <TextBoxFiveTable3/>
+        </Formulario>
+        <Promedio/>
+        {formulario === false && <MensajeError>
+          <p>
+            <FontAwesomeIcon icon={faExclamationTriangle} />
+            <b>Error:</b> Por favor rellena el formulario correctamente.
+          </p>
+        </MensajeError>}
+        <ContenedorBotonCentrado>
+          <Boton type="submit">Enviar</Boton>
+          {formulario === true && <MensajeExito>Formulario enviado exitosamente!</MensajeExito>}
+        </ContenedorBotonCentrado>
     </main>
   )
 }

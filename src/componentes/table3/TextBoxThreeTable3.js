@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContenedorText1,DivBox13, Label,DivSelectThreeTable2 } from '../../elementos/table1';
+import { ContenedorText1,DivBox13, Label,DivSelectThreeTable3 } from '../../elementos/table2';
 
 const TextBox3 = () =>{
     return(
@@ -7,24 +7,24 @@ const TextBox3 = () =>{
         <ContenedorText1>
             <DivBox13>
                 <Label>
-                    <b>POTENCIAL Y CAPACIDAD DE<br/>APRENDIZAJE - Tiene perfil<br/> funcional. Inquietud y capacidad<br/> para conocer las distintas <br/> herramientas necesarias para el <br/>trabajo.</b>
+                    <b>CAPACIDAD DE ACEPTAR CRÍTICAS -<br/>Capacidad de recibir críticas<br/> constructivas en forma abierta.<br/> Grado de aceptación a las mismas. <br/> Capacidad de no ofenderse y <br/>aprovechar las críticas para mejorar.</b>
                 </Label>
             </DivBox13>
-            <DivSelectThreeTable2>
-                <input type="number" id="input19" name="tentacles" defaultValue = '1'
+            <DivSelectThreeTable3>
+                <input type="number" id="input31" name="tentacles" defaultValue = '1'
                 min="1" max="5"
                 />
-            </DivSelectThreeTable2>
-            <DivSelectThreeTable2>
-                <input type="number" id="input20" name="tentacles" defaultValue = '1'
+            </DivSelectThreeTable3>
+            <DivSelectThreeTable3>
+                <input type="number" id="input32" name="tentacles" defaultValue = '1'
                 min="1" max="5"
                 />
-            </DivSelectThreeTable2>
-            <DivSelectThreeTable2>
-                <input type="number" id="input21" name="tentacles" defaultValue = '1'
+            </DivSelectThreeTable3>
+            <DivSelectThreeTable3>
+                <input type="number" id="input33" name="tentacles" defaultValue = '1'
                     min="1" max="5"
                 />
-            </DivSelectThreeTable2>
+            </DivSelectThreeTable3>
         </ContenedorText1>
     )
 }

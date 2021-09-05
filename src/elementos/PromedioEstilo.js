@@ -26,8 +26,8 @@ const ContenedorText = styled.div`
 
 const DivBox1 = styled.p`
     position: relative;
-    top: 900px;
-    right: 100px;
+    top: 1200px;
+    left: 250px;
     width: 210.21px;
     height: 60.59px;
     background: rgba(196, 196, 196, 0.3);
@@ -54,8 +54,8 @@ const DivBox1 = styled.p`
 
 const DivBox2 = styled.p`
     position: relative;
-    top: 822px;
-    left: 120px;
+    top: 1122px;
+    left: 470px;
     width: 210.21px;
     height: 60.59px;
     background: rgba(196, 196, 196, 0.3);
@@ -82,8 +82,8 @@ const DivBox2 = styled.p`
 
 const DivBox3 = styled.p`
     position: relative;
-    top: 744px;
-    left: 340px;
+    top: 1044px;
+    left: 690px;
     width: 210.21px;
     height: 60.59px;
     background: rgba(196, 196, 196, 0.3);
@@ -110,8 +110,8 @@ const DivBox3 = styled.p`
 
 const DivBox4 = styled.p`
     position: relative;
-    top: 750px;
-    right: 328px;
+    top: 1050px;
+    left: 28px;
     width: 210.21px;
     height: 60.59px;
     background: rgba(196, 196, 196, 0.3);
@@ -138,8 +138,8 @@ const DivBox4 = styled.p`
 
 const DivBox5 = styled.p`
     position: relative;
-    top: 673px;
-    right: 100px;
+    top: 973px;
+    left: 250px;
     width: 210.21px;
     height: 60.59px;
     background: rgba(196, 196, 196, 0.3);
@@ -165,8 +165,8 @@ const DivBox5 = styled.p`
 
 const DivBox6 = styled.p`
     position: relative;
-    top: 597px;
-    left: 120px;
+    top: 897px;
+    left: 470px;
     width: 210.21px;
     height: 60.59px;
     background: rgba(196, 196, 196, 0.3);
@@ -193,8 +193,8 @@ const DivBox6 = styled.p`
 
 const DivBox7 = styled.p`
     position: relative;
-    top: 518px;
-    left: 340px;
+    top: 818px;
+    left: 690px;
     width: 210.21px;
     height: 60.59px;
     background: rgba(196, 196, 196, 0.3);

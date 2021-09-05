@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContenedorText1,DivBox14, Label,DivSelectFourTable2 } from '../../elementos/table1';
+import { ContenedorText1,DivBox14, Label,DivSelectFourTable3 } from '../../elementos/table2';
 
 const TextBox4 = () =>{
     return(
@@ -7,24 +7,24 @@ const TextBox4 = () =>{
         <ContenedorText1>
             <DivBox14>
                 <Label>
-                    <b>INICIATIVA - Muestra nuevas ideas<br/>de mejora, se anticipa a las<br/> dificultades y tienen gran capacidad<br/> para resolver problemas.</b>
+                    <b>TRABAJO EN EQUIPO - Muestra<br/>aptitud para integrarse al equipo,se<br/> identifica facilmente con los <br/> objetivos del equipo y se muestra <br/> asequible al cambio.</b>
                 </Label>
             </DivBox14>
-            <DivSelectFourTable2>
-                <input type="number" id="input22" name="tentacles" defaultValue = '1'
+            <DivSelectFourTable3>
+                <input type="number" id="input34" name="tentacles" defaultValue = '1'
                 min="1" max="5"
                 />
-            </DivSelectFourTable2>
-            <DivSelectFourTable2>
-                <input type="number" id="input23" name="tentacles" defaultValue = '1'
+            </DivSelectFourTable3>
+            <DivSelectFourTable3>
+                <input type="number" id="input35" name="tentacles" defaultValue = '1'
                 min="1" max="5"
                 />
-            </DivSelectFourTable2>
-            <DivSelectFourTable2>
-                <input type="number" id="input24" name="tentacles" defaultValue = '1'
+            </DivSelectFourTable3>
+            <DivSelectFourTable3>
+                <input type="number" id="input36" name="tentacles" defaultValue = '1'
                     min="1" max="5"
                 />
-            </DivSelectFourTable2>
+            </DivSelectFourTable3>
         </ContenedorText1>
     )
 }
