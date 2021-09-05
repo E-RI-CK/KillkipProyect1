@@ -16,6 +16,15 @@ import TextBoxThree from './componentes/tabla1/TextBoxThree';
 import TextBoxFour from './componentes/tabla1/TextBoxFour';
 import TextBox1 from './componentes/tabla2/TextBox1';
 import TextBoxOneTable2 from './componentes/tabla2/TextBoxOneTable2';
+import TextBoxTwoTable2 from './componentes/tabla2/TextBoxTwoTable2';
+import TextBoxThreeTable2 from './componentes/tabla2/TextBoxThreeTable2';
+import TextBoxFourTable2 from './componentes/tabla2/TextBoxFourTable2';
+import Promedio from "./componentes/Promedio/Promedio";
+import Habilidad from "./componentes/tabla2/TitleTable2";
+import Liderazgo from "./componentes/table3/TitleTable3";
+import TextBox2 from "./componentes/table3/TextBox2";
+import TextBoxOneTable3 from './componentes/table3/TextBoxOneTable3';
+import TextBoxTwoTable3 from './componentes/table3/TextBoxTwoTable3';
 const App = () => {
 
   const [Fila1, setFila1] = useState({ box1: { input1: '1', input2: '1', input3: '1' } });
@@ -273,17 +282,17 @@ const App = () => {
         <TextBoxThree/>
         <TextBoxFour/>
         <TextBox1/>
+        <Habilidad/>
         <TextBoxOneTable2/>
-        {formulario === false && <MensajeError>
-          <p>
-            <FontAwesomeIcon icon={faExclamationTriangle} />
-            <b>Error:</b> Por favor rellena el formulario correctamente.
-          </p>
-        </MensajeError>}
-        <ContenedorBotonCentrado>
-          <Boton type="submit">Enviar</Boton>
-          {formulario === true && <MensajeExito>Formulario enviado exitosamente!</MensajeExito>}
-        </ContenedorBotonCentrado>
+        <TextBoxTwoTable2/>
+        <TextBoxThreeTable2/>
+        <TextBoxFourTable2/>
+        <Liderazgo/>
+        <TextBox2/>
+        <TextBoxOneTable3/>
+        <TextBoxTwoTable3/>
+        
+        
       </Formulario>
 
     </main>
@@ -292,6 +301,7 @@ const App = () => {
 export default App;
 
 /*
+<Promedio/>
 {formulario === false && <MensajeError>
   <p>
     <FontAwesomeIcon icon={faExclamationTriangle} />

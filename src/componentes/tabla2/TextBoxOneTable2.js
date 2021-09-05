@@ -7,21 +7,21 @@ const TextBox1 = () =>{
         <ContenedorText1>
             <DivBox11>
                 <Label>
-                    <b>RESPUESTA BAJO PRESIÓN - <br/> Capacidad de mantener la calma y <br/> transmitirla a sus compañeros. <br/> Capacidad de tomar decisiones <br/> correctas bajo presión. Capacidad de <br/> </b>
+                    <b>RESPUESTA BAJO PRESIÓN - <br/> Capacidad de mantener la calma y <br/> transmitirla a sus compañeros. <br/> Capacidad de tomar decisiones <br/> correctas bajo presión. Capacidad de <br/> sacar provecho de situaciones <br/> adversas. Capacidad de realización en <br/> estos casos. </b>
                 </Label>
             </DivBox11>
             <DivSelectOneTable2>
-                <input type="number" id="input1" name="tentacles" defaultValue = '1'
+                <input type="number" id="input13" name="tentacles" defaultValue = '1'
                 min="1" max="5"
                 />
             </DivSelectOneTable2>
             <DivSelectOneTable2>
-                <input type="number" id="input2" name="tentacles" defaultValue = '1'
+                <input type="number" id="input14" name="tentacles" defaultValue = '1'
                 min="1" max="5"
                 />
             </DivSelectOneTable2>
             <DivSelectOneTable2>
-                <input type="number" id="input3" name="tentacles" defaultValue = '1'
+                <input type="number" id="input15" name="tentacles" defaultValue = '1'
                     min="1" max="5"
                 />
             </DivSelectOneTable2>

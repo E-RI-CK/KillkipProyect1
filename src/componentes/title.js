@@ -9,4 +9,4 @@ const ComponentTitle = () => {
   )
 }
 
-export default ComponentTitle
+export default ComponentTitle;

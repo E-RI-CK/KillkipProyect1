@@ -1,5 +1,5 @@
 import styled,{css} from 'styled-components';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const colores = {
@@ -20,6 +20,21 @@ const Label = styled.label`
     `}
 `;
 
+const Asterisk = styled(FontAwesomeIcon)`
+    color: red;
+    font-size: 8px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+`;
+
+const TitleNames = styled.p`
+    position: relative;
+    top: 450px;
+    font-size: 14px;
+    grid-column: span 3;
+    margin: 10px;
+    text-align: left;
+`;
 
 const ContenedorText1 = styled.div`
     
@@ -28,7 +43,7 @@ const ContenedorText1 = styled.div`
 const DivBox8 = styled.p`
     position: relative;
     top: 480px;
-    right: 440px;
+    left: 240px;
     width: 210.21px;
     height: 85.59px;
     background: rgba(196, 196, 196, 0.3);
@@ -43,8 +58,7 @@ const DivBox8 = styled.p`
         padding-right: 20px;
         font-family: Arial;
         font-style: normal;
-        font-weight: bold;
-        text-align: right;
+        font-weight: bold;;
         font-size: 17.1018px;
         line-height: 24px;
         text-align: center;
@@ -55,7 +69,7 @@ const DivBox8 = styled.p`
 const DivBox9 = styled.p`
     position: relative;
     top: 376px;
-    right: 220px;
+    left: 460px;
     height: 85.59px;
     width: 210.21px;
     background: rgba(196, 196, 196, 0.3);
@@ -70,7 +84,6 @@ const DivBox9 = styled.p`
         font-family: Arial;
         font-style: normal;
         font-weight: bold;
-        text-align: right;
         font-size: 17.1018px;
         line-height: 24px;
         text-align: center;
@@ -82,6 +95,7 @@ const DivBox9 = styled.p`
 const DivBox10 = styled.p`
     position: relative;
     top: 274px;
+    left: 680px;
     width: 210.21px;
     height: 85.59px;
     background: rgba(196, 196, 196, 0.3);
@@ -97,7 +111,6 @@ const DivBox10 = styled.p`
         font-family: Arial;
         font-style: normal;
         font-weight: bold;
-        text-align: right;
         font-size: 17.1018px;
         line-height: 24px;
         text-align: center;
@@ -109,15 +122,15 @@ const DivBox10 = styled.p`
 const DivBox11 = styled.p`
 
     position: relative;
-    top: 230px;
-    right: 93px;
+    top: 580px;
+    right: 433px;
     width: 320px;
     height: 228px;
     background: rgba(196, 196, 196, 0.3);
     border-radius: 8.85374px;
 
     Label{
-        padding: 20px 0px 0px 0px;
+        padding: 60px 0px 0px 0px;
         font-family: Arial;
         font-style: normal;
         font-weight: bold;
@@ -132,8 +145,8 @@ const DivBox11 = styled.p`
 const DivBox12 = styled.p`
 
     position: relative;
-    top: 470px;
-    right: 433px;
+    top: 830px;
+    right: 774px;
     width: 320px;
     height: 228px;
     background: rgba(196, 196, 196, 0.3);
@@ -192,20 +205,20 @@ const DivBox14 = styled.p`
         font-weight: bold;
         font-size: 17.1018px;
         line-height: 24px;
-        text-align: none;
+        text-align: left;
         color: #454545;
     }
 
 `;
 
-const DivSelectOneTable2 = styled.div`
+const DivSelectOneTable3 = styled.div`
 
     display: inline-flexbox;
 
-    #input13{
+    #input25{
         position: relative;
-        left: 261px;
-        top: 60px;
+        right: 75px;
+        top: 415px;
         padding: 0 20px 0 20px;
         width: 150px;
         height: 80px;
@@ -213,10 +226,10 @@ const DivSelectOneTable2 = styled.div`
         background: rgba(196, 196, 196, 0.3);
     }
 
-    #input14{
+    #input26{
         position: relative;
-        top: 60px;
-        left: 332px;
+        top: 415px;
+        right: 8px;
         padding: 0 20px 0 20px;
         width: 150px;
         height: 80px;
@@ -224,10 +237,10 @@ const DivSelectOneTable2 = styled.div`
     }
 
 
-    #input15{
+    #input27{
         position: relative;
-        bottom: 20px;
-        left: 630px;
+        top: 335px;
+        left: 285px;
         padding: 0 20px 0 20px;
         width: 150px;
         height: 80px;
@@ -237,14 +250,14 @@ const DivSelectOneTable2 = styled.div`
     }
 `;
 
-const DivSelectTwoTable2 = styled.div`
+const DivSelectTwoTable3 = styled.div`
 
     display: inline-block;
 
-    #input16{
+    #input28{
         position: relative;
-        top: 300px;
-        right: 76px;
+        top: 650px;
+        right: 412px;
         padding: 0 20px 0 20px;
         width: 150px;
         height: 80px;
@@ -252,33 +265,32 @@ const DivSelectTwoTable2 = styled.div`
         background: rgba(196, 196, 196, 0.3);
     }
 
-    #input17{
+    #input29{
         position: relative;
-        top: 300px;
-        right: 12px;
+        top: 650px;
+        right: 347px;
         padding: 0 20px 0 20px;
         width: 150px;
         height: 80px;
         background: rgba(196, 196, 196, 0.3);
     }
 
-    #input18{
+    #input30{
         position: relative;
-        left: 290px;
-        top: 220px;
+        right: 49px;
+        top: 570px;
         padding: 0 20px 0 20px;
         width: 150px;
         height: 80px;
         background: rgba(196, 196, 196, 0.3);
-      
     }
 `;
 
-const DivSelectThreeTable2 = styled.div`
+const DivSelectThreeTable3 = styled.div`
 
     display: inline-block;
 
-    #input19{
+    #input31{
         position: relative;
         top: 550px;
         right: 416px;
@@ -289,7 +301,7 @@ const DivSelectThreeTable2 = styled.div`
         background: rgba(196, 196, 196, 0.3);
     }
 
-    #input20{
+    #input32{
         position: relative;
         top: 550px;
         right: 353px;
@@ -300,7 +312,7 @@ const DivSelectThreeTable2 = styled.div`
         background: rgba(196, 196, 196, 0.3);
     }
 
-    #input21{
+    #input33{
         position: relative;
         top: 470px;
         right: 50px;
@@ -311,11 +323,11 @@ const DivSelectThreeTable2 = styled.div`
     }
 `;
 
-const DivSelectFourTable2 = styled.div`
+const DivSelectFourTable3 = styled.div`
 
 display: inline-block;
 
-    #input22{
+    #input34{
         position: relative;
         top: 350px;
         left: 264px;
@@ -326,7 +338,7 @@ display: inline-block;
         background: rgba(196, 196, 196, 0.3);
     }
 
-    #input23{
+    #input35{
         position: relative;
         top: 350px;
         left: 328px;
@@ -337,7 +349,7 @@ display: inline-block;
         background: rgba(196, 196, 196, 0.3);
     }
 
-    #input24{
+    #input36{
         position: relative;
         top: 270px;
         left: 630px;
@@ -352,6 +364,8 @@ display: inline-block;
 export{
     Label,
     ContenedorText1,
+    Asterisk,
+    TitleNames,
     DivBox8,
     DivBox9,
     DivBox10,
@@ -359,8 +373,8 @@ export{
     DivBox12,
     DivBox13,
     DivBox14,
-    DivSelectOneTable2,
-    DivSelectTwoTable2,
-    DivSelectThreeTable2,
-    DivSelectFourTable2
+    DivSelectOneTable3,
+    DivSelectTwoTable3,
+    DivSelectThreeTable3,
+    DivSelectFourTable3
 }

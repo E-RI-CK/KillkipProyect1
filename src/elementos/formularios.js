@@ -129,7 +129,11 @@ const ContenedorBotonCentrado = styled.div`
 `;
 
 const Boton = styled.button`
+    position:relative;
+    top: 410px;
+    bottom: 500px;
     height: 45px;
+    
     grid-column: span 1;
     line-height: 50px;
     width: 30%;
