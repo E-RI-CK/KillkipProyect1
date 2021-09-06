@@ -134,6 +134,7 @@ const Boton = styled.button`
     bottom: 500px;
     height: 45px;
     
+    
     grid-column: span 1;
     line-height: 50px;
     width: 30%;

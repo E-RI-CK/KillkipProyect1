@@ -28,7 +28,7 @@ import TextBoxTwoTable3 from './componentes/table3/TextBoxTwoTable3';
 import TextBoxThreeTable3 from './componentes/table3/TextBoxThreeTable3';
 import TextBoxFourTable3 from './componentes/table3/TextBoxFourTable3';
 import TextBoxFiveTable3 from './componentes/table3/TextBoxFiveTable3';  
-
+import Prueba from './componentes/pruebita';
 
 const App = () => {
 
@@ -301,6 +301,7 @@ const App = () => {
         <TextBoxFiveTable3/>
         </Formulario>
         <Promedio/>
+        <Prueba/>
         {formulario === false && <MensajeError>
           <p>
             <FontAwesomeIcon icon={faExclamationTriangle} />

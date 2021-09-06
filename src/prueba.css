@@ -1,0 +1,241 @@
+.container {
+    position: relative;
+    top: 500px;
+    right: 115px;
+    border-radius: 10px;
+    background: rgba(255, 210, 0, 1);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 9.9% 90.1%;
+    grid-auto-columns: 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    align-content: stretch;
+    /*width: 1748px;
+    height: 1235px;*/
+    width: 1032px;
+    height: 811px;
+    z-index: -10;
+}
+
+.titulo {
+    display: grid;
+    grid-template-columns: 32.5% 35% 32.5%;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.Cuerpo {
+    display: grid;
+    grid-template-columns: 6% 38% 15% 15% 15% 6%;
+    grid-template-rows: 6% 12% 16% 16% 16% 16% 6%;
+    grid-auto-columns: 1fr;
+    gap: 2% 1%;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . ."
+        ". . colaborador encargado director ."
+        ". cumplimientos p1 p2 p3 ."
+        ". sentido p4 p5 p6 ."
+        ". orientacion p7 p8 p9 ."
+        ". responsabilidad p10 p11 p12 ."
+        ". . . . . .";
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.cumplimientos {
+    border-radius: 30px;
+    grid-area: cumplimientos;
+    background: #FFFFFFB2;
+
+}
+
+.sentido {
+    border-radius: 30px;
+    grid-area: sentido;
+    background: #FFFFFFB2;
+
+}
+
+.orientacion {
+    border-radius: 30px;
+    grid-area: orientacion;
+    background: #FFFFFFB2;
+
+}
+
+.responsabilidad {
+    border-radius: 30px;
+    grid-area: responsabilidad;
+    background: #FFFFFFB2;
+
+}
+
+.colaborador {
+    border-radius: 30px;
+    grid-area: colaborador;
+    background: #FFFFFFB2;
+}
+
+.colaborador  p {
+    width: 219.38px;
+    height: 48.2px;
+    
+    
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    font-size: 17.1018px;
+    line-height: 24px;
+    text-align: center;
+    color: green;
+}
+
+.encargado {
+    border-radius: 30px;
+    grid-area: encargado;
+    background: #FFFFFFB2;
+
+}
+
+.director {
+    border-radius: 30px;
+    grid-area: director;
+    background: #FFFFFFB2;
+
+}
+
+.p1 {
+    grid-area: p1;
+    border-radius: 30px;
+    background: #FFFFFFB2;
+
+}
+
+.p2 {
+    grid-area: p2;
+    border-radius: 30px;
+    background: #FFFFFFB2;
+
+}
+
+.p3 {
+    grid-area: p3;
+    border-radius: 30px;
+    background: #FFFFFFB2;
+
+}
+
+.p4 {
+    grid-area: p4;
+    border-radius: 30px;
+    background: #FFFFFFB2;
+
+}
+
+.p5 {
+    grid-area: p5;
+    border-radius: 30px;
+    background: #FFFFFFB2;
+
+}
+
+.p6 {
+    grid-area: p6;
+    border-radius: 30px;
+    background: #FFFFFFB2;
+
+}
+
+.p7 {
+    grid-area: p7;
+    border-radius: 30px;
+    background: #FFFFFFB2;
+
+}
+
+.p8 {
+    grid-area: p8;
+    background: #FFFFFFB2;
+    border-radius: 30px;
+
+}
+
+.p9 {
+    border-radius: 30px;
+    grid-area: p9;
+    background: #FFFFFFB2;
+
+}
+
+.p10 {
+    border-radius: 30px;
+    grid-area: p10;
+    background: #FFFFFFB2;
+
+}
+
+.p11 {
+    border-radius: 30px;
+    grid-area: p11;
+    background: #FFFFFFB2;
+
+}
+
+.p12 {
+    border-radius: 30px;
+    grid-area: p12;
+    background: #FFFFFFB2;
+
+}
+
+.titulo-texto {
+    display: grid;
+    grid-template-columns: 32.5% 35% 32.5%;
+    grid-template-rows: 100% 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". titulo-texto-tipo ."
+        ". . .";
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.titulo-texto-tipo {
+    border-radius: 0px 0px 30px 30px;
+    grid-area: titulo-texto-tipo;
+
+    background-color: white;
+}
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* For presentation only, no need to copy the code below 
+
+.container * {
+    border: 1px solid red;
+    position: relative;
+}
+
+.container *:after {
+    content: attr(class);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+*/
